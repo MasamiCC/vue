@@ -17,7 +17,7 @@
       if (!_footer) {
         this.$store.dispatch('barVisible');
       }
-      this.$store.dispatch('changeBar', 'my')
+      this.$store.dispatch('changeBar', 'my');
     }
   }
 </script>

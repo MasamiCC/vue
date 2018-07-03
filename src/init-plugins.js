@@ -1,4 +1,5 @@
 import Vue from 'vue';
+
 //引入mint-ui
 import MintUI from 'mint-ui'
 //引入mint-ui的样式
@@ -9,6 +10,12 @@ import VCalendar from 'v-calendar'
 
 //引入vue-event-calendar组件
 import vueEventCalendar from 'vue-event-calendar'
+
+//引入echarts
+import echarts from 'echarts'
+
+//引入font-awesome.css
+import 'font-awesome/css/font-awesome.css'
 
 export const initPlugins = function() {
     Vue.use(MintUI);
@@ -21,5 +28,5 @@ export const initPlugins = function() {
         className: 'selected-day', // (default: 'selected-day')
         weekStartOn: '1'  // Can be: 1, 2, 3, 4, 5, 6, 0 (default: 0)
     });
-    // Vue.prototype.$echarts = echarts;
+    Vue.prototype.$echarts = echarts;
 }

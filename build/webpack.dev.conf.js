@@ -13,6 +13,25 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+//自己模拟一个服务器
+const express = require('express')
+const app = express()
+var appData = require('../static/mock/data.json')
+var my = appData.my
+var apiRoutes = express.Router()
+app.use('/api',apiRoutes)
+
+before(app){
+  app.get('/api/my', (req, res) => {
+    res.json({
+      // 这里是你的json内容
+      errno: 0,
+      data: my
+    })
+  })
+}
+
+
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
