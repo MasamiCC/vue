@@ -10,6 +10,9 @@ import { fetchGet, fetchPost} from './api/axiosConfig'
 Vue.prototype.$get = fetchGet //get方法
 Vue.prototype.$post = fetchPost //post方法
 
+//引入兼容ie的包
+import es6Promise from "babel-polyfill";
+
 import {initPlugins} from './init-plugins.js'
 //初始化第三方的组件
 initPlugins();
