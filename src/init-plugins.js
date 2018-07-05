@@ -1,9 +1,16 @@
 import Vue from 'vue';
 
+//引入公共css
+import '../static/css/common.css'
+
 //引入mint-ui
 import MintUI from 'mint-ui'
 //引入mint-ui的样式
 import 'mint-ui/lib/style.css'
+
+//引入第三方icon
+import './assets/icon/iconfont.css'
+import './assets/icon/iconfont.js'
 
 //引入v-calendar组件
 import VCalendar from 'v-calendar'

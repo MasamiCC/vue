@@ -20,15 +20,21 @@
       <!--应用展示-->
       <div class="apps">
         <div @click="go('chart')">
-          <img src="../../assets/tool/chart.png"/>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#my-init-dingdanchaxun"></use>
+          </svg>
           <span>业务统计</span>
         </div>
         <div @click="go('loadmore')">
-          <img src="../../assets/tool/data.png"/>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#my-init-shujufenxi"></use>
+          </svg>
           <span>测试数据</span>
         </div>
         <div @click="go('memolist')">
-          <img src="../../assets/tool/note.png"/>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#my-init-txt"></use>
+          </svg>
           <span>我的备忘</span>
         </div>
       </div>

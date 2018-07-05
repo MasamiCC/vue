@@ -9,6 +9,9 @@ import Loadmore from '../page/tool/loadmore.vue'
 import MemoNew from '../page/tool/memonew.vue'
 import MemoList from '../page/tool/memolist.vue'
 
+//my的子模块
+import MyInfo from '../page/my/myinfo.vue'
+
 Vue.use(Router)
 
 // 涉及到组件加载的路由
@@ -75,6 +78,14 @@ export default new Router({
 			component: My,
 			meta: {
 				title: '我的'
+			}
+	  },
+	  //我的信息
+	  {
+	  	path: '/my/myinfo',
+			component: MyInfo,
+			meta: {
+				title: '个人信息'
 			}
 	  }]
 })

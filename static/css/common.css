@@ -1,0 +1,14 @@
+body{
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+/*通用icon*/
+.icon {
+   width: 2.5em; 
+   height: 2.5em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}

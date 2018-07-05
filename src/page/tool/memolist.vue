@@ -33,10 +33,11 @@
   import {MessageBox} from 'mint-ui';
   export default {
     created(){
-      let _footer = this.$store.state.footerVisible;
-      if (_footer) {
-        this.$store.commit('TOGGLE_FOOTER');
+      let _footer = this.$store.state.bar.footerVisible;
+      if (!_footer) {
+        this.$store.dispatch('barVisible');
       }
+      this.$store.dispatch('changeBar', 'tool');
     },
     methods: {
       newMemo(){
